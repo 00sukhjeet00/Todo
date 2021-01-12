@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% load static %}
+<head>
+    {% block loadfiles %}
+        <link href="{% static 'main.css' %}" rel="stylesheet">
+    {% endblock loadfiles %}
+    <title>Todo</title>
+</head>
+<body>
+{% block body %}
+<main class="main bg-dark">
+    <div>Todos...</div>
+</main>
+{% endblock body %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+</html>

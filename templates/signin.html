@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+{% block body %}
+<div class="container-fluid w-50 mt-5 shadow">
+    <h3>Sign in</h3>
+    <form action="signin" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-info mb-2">Sign in</button>
+    </form>
+    
+</div>
+{% endblock body %}
